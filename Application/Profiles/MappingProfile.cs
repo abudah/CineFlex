@@ -16,8 +16,10 @@ namespace Application.Profiles
         public MappingProfile()
         {
             CreateMap<Movie, MovieDto>().ReverseMap();
+            CreateMap<Movie, UpdateMovieDto>().ReverseMap();
+            CreateMap<Movie, CreateMovieDto>().ReverseMap();
+
             CreateMap<Cinema, CinemaDto>().ReverseMap();
-            CreateMap<Movie, MovieListDto>().ReverseMap();
             CreateMap<Cinema, CinemaListDto>().ReverseMap();
         }
     }

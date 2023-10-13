@@ -12,7 +12,7 @@ namespace Application.Contracts
         Task<IReadOnlyList<T>> GetAll();
         Task<T> Add(T entity);
         Task Update(T entity);
-        Task Delete(T entity);
+        Task Delete(int id);
 
     }
 }

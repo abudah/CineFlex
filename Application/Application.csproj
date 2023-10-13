@@ -22,7 +22,5 @@
     <ItemGroup>
       <Folder Include="Features\Cinema\Handlers\" />
       <Folder Include="Features\Cinema\Requests\" />
-      <Folder Include="Features\Movie\Handlers\Commands\" />
-      <Folder Include="Features\Movie\Requests\Commands\" />
     </ItemGroup>
 </Project>

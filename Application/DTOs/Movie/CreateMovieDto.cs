@@ -1,5 +1,4 @@
-﻿using Application.DTOs.Common;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -7,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Application.DTOs.Movie
 {
-    public class MovieDto : BaseDto, IMovieDto
+    public class CreateMovieDto : IMovieDto
     {
         public string Title { get; set; } = "";
         public DateTime Release_date { get; set; }

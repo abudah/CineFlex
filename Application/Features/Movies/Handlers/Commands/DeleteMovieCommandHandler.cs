@@ -26,7 +26,7 @@ namespace Application.Features.Movies.Handlers.Commands
             if (movie == null)
                 throw new NotFoundException(nameof(movie), request.Id);
 
-            await _movieRepository.Delete(movie.Id);
+            await _movieRepository.Delete(movie);
 
             return Unit.Value;
 

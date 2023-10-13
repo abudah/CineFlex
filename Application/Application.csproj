@@ -18,9 +18,4 @@
     <ItemGroup>
       <ProjectReference Include="..\Domain\Domain.csproj" />
     </ItemGroup>
-
-    <ItemGroup>
-      <Folder Include="Features\Cinemas\Handlers\" />
-      <Folder Include="Features\Cinemas\Requests\" />
-    </ItemGroup>
 </Project>

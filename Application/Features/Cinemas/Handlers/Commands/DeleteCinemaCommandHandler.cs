@@ -26,7 +26,7 @@ namespace Application.Features.Cinemas.Handlers.Commands
             if (cinema == null)
                 throw new NotFoundException(nameof(cinema), request.Id);
 
-            await _cinemaRepository.Delete(cinema.Id);
+            await _cinemaRepository.Delete(cinema);
 
             return Unit.Value;
 

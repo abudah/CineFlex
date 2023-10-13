@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Application.DTOs.Cinema
 {
-     public class CinemaDto : BaseDto, ICinemaDto
+    public class UpdateCinemaDto :BaseDto, ICinemaDto
     {
         public string Name { get; set; } = "";
         public string Address { get; set; } = "";

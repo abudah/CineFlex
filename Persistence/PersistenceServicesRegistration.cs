@@ -16,12 +16,13 @@ namespace Persistence
         public static IServiceCollection ConfigurePersistenceServices(this IServiceCollection services, IConfiguration configuration)
         {
             services.AddDbContext<CineFlexDbContext>(opt =>
-            opt.UseNpgsql(configuration.GetConnectionString("CineFlexConnectionString")));
+                 opt.UseNpgsql(configuration.GetConnectionString("CineFlexConnectionString")));
 
             services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));
 
             services.AddScoped<IMovieRepository, MovieRepository>();
             services.AddScoped<ICinemaRepository, CinemaRepository>();
+           
             return services;
 
         }

@@ -5,10 +5,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Application.Features.Movie.Requests.Commands
+namespace Application.Features.Cinemas.Requests.Commands
 {
-    public class DeleteMovieCommand : IRequest
+    public class DeleteCinemaCommand : IRequest
     {
-        public int Id { get; set; } 
+        public int Id { get; set; }
     }
 }

@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Application.Features.Movie.Requests.Commands
+namespace Application.Features.Movies.Requests.Commands
 {
     public class CreateMovieCommand : IRequest<BaseCommandResponse>
     {

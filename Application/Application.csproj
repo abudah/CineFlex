@@ -20,7 +20,7 @@
     </ItemGroup>
 
     <ItemGroup>
-      <Folder Include="Features\Cinema\Handlers\" />
-      <Folder Include="Features\Cinema\Requests\" />
+      <Folder Include="Features\Cinemas\Handlers\" />
+      <Folder Include="Features\Cinemas\Requests\" />
     </ItemGroup>
 </Project>

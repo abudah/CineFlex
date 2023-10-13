@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Application.Features.Movie.Requests.Queries
+namespace Application.Features.Movies.Requests.Queries
 {
     public class GetMovieListRequest : IRequest<List<MovieDto>>
     {

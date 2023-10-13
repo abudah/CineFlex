@@ -6,10 +6,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Application.Features.Movie.Requests.Commands
+namespace Application.Features.Movies.Requests.Queries
 {
-    public class UpdateMovieCommand : IRequest<Unit>
+    public class GetMovieDetailRequest : IRequest<MovieDto>
     {
-        public UpdateMovieDto UpdateMovieDto { get; set; }
+        public int Id { get; set; } 
     }
 }

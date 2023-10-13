@@ -1,14 +1,13 @@
-﻿using Application.DTOs.Movie;
-using MediatR;
+﻿using MediatR;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Application.Features.Movie.Requests.Queries
+namespace Application.Features.Movies.Requests.Commands
 {
-    public class GetMovieDetailRequest : IRequest<MovieDto>
+    public class DeleteMovieCommand : IRequest
     {
         public int Id { get; set; } 
     }

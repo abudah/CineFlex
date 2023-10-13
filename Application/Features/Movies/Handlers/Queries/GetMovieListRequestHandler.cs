@@ -1,6 +1,6 @@
 ﻿using Application.Contracts;
 using Application.DTOs.Movie;
-using Application.Features.Movie.Requests.Queries;
+using Application.Features.Movies.Requests.Queries;
 using AutoMapper;
 using MediatR;
 using System;
@@ -9,7 +9,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Application.Features.Movie.Handlers.Queries
+namespace Application.Features.Movies.Handlers.Queries
 {
     public class GetMovieListRequestHandler : IRequestHandler<GetMovieListRequest, List<MovieDto>>
         {

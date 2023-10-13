@@ -20,7 +20,8 @@ namespace Application.Profiles
             CreateMap<Movie, CreateMovieDto>().ReverseMap();
 
             CreateMap<Cinema, CinemaDto>().ReverseMap();
-            CreateMap<Cinema, CinemaListDto>().ReverseMap();
+            CreateMap<Cinema, UpdateCinemaDto>().ReverseMap();
+            CreateMap<Cinema, CreateCinemaDto>().ReverseMap();
         }
     }
 }

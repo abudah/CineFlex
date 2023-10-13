@@ -28,7 +28,10 @@ namespace Persistence
             {
                 if (entry.State == EntityState.Added)
                 {
-                    entry.Entity.CreatedAt = DateTime.Now;
+                    DateTime localDateTime = DateTime.Now; // Your local DateTime value
+                    DateTime utcDateTime = localDateTime.ToUniversalTime();
+
+                    entry.Entity.CreatedAt = utcDateTime;
                 }
             }
             return base.SaveChangesAsync(acceptAllChangesOnSuccess, cancellationToken);
